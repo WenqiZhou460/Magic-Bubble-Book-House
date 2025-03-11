@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Bubble Book House</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Gochi+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="floating-circles" id="floatingCircles"></div>
+    <div class="container">
+        <h1 class="main-title">Magic Bubble Book House</h1>
+        <div class="subtitle-links">
+            <a href="#categories" class="subtitle">Categories</a>
+            <a href="#information-section" class="subtitle">Information</a>
+            <a href="#more-books-section" class="subtitle">More Books</a>
+        </div>
+
+        <div id="categoriesPopup" class="categories-popup">
+            <div class="categories-options">
+                <div class="category-option" onclick="window.location.href='educational.html'">Educational</div>
+                <div class="category-option" onclick="window.location.href='emotional.html'">Emotional</div>
+                <div class="category-option" onclick="window.location.href='fantasy.html'">Fantasy</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="photo-section">
+                <div class="book-container">
+                    <img src="image/1.jpg" alt="Picture Book 1" class="photo">
+                    <div class="text-placeholder" onclick="openPopup('popup1')">
+                        <p>A Hungry Caterpillar Embarks on His Gourmet Adventure...</p>
+                    </div>
+                </div>
+
+                <div class="book-container">
+                    <img src="image/2.jpg" alt="Picture Book 2" class="photo">
+                    <div class="text-placeholder" onclick="openPopup('popup2')">
+                        <p>Fun quiz on animals and colors...</p>
+                    </div>
+                </div>
+
+                <div class="book-container">
+                    <img src="image/3.jpg" alt="Picture Book 3" class="photo">
+                    <div class="text-placeholder" onclick="openPopup('popup3')">
+                        <p>The story of a little boy and his goldfish Otto...</p>
+                    </div>
+                </div>
+
+                <div class="book-container">
+                    <img src="image/4.jpg" alt="Picture Book 4" class="photo">
+                    <div class="text-placeholder" onclick="openPopup('popup4')">
+                        <p>A naughty and slow puppy...</p>
+                    </div>
+                </div>
+
+                <div class="book-container">
+                    <img src="image/5.jpg" alt="Picture Book 5" class="photo">
+                    <div class="text-placeholder" onclick="openPopup('popup5')">
+                        <p>A boy and a tree full of love...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+            <h2>The Very Hungry Caterpillar</h2>
+            <p><strong>By Eric Carle</strong></p>
+            <p>A cute caterpillar was born. He was very hungry. He ate 1 apple, 2 pears, 3 plums, 4 strawberries, 5 oranges, cake, ice cream, pickles, etc. What would happen to him in the end?</p>
+        </div>
+    </div>
+
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup2')">&times;</span>
+            <h2>Brown Bear, Brown Bear, What Do You See? Slide and Find</h2>
+            <p><strong>By Bill Martin Jr and Eric Carle</strong></p>
+            <p>A trivia question about animals and colors: many small animals look at each other. A red bird is looking at a brown bear, and a yellow duck is looking at a red bird.</p>
+        </div>
+    </div>
+
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup3')">&times;</span>
+            <h2>A Fish Out of Water</h2>
+            <p><strong>By Helen Palmer and P.D. Eastman</strong></p>
+            <p>A boy went to a pet store and bought a little goldfish named Otto. The owner of the pet store told the boy: "Don't feed it too much." When the boy returned home, he looked at the hungry goldfish and fed it all the fish food. The goldfish Otto gradually grew bigger and bigger.</p>
+        </div>
+    </div>
+
+    <div id="popup4" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup4')">&times;</span>
+            <h2>The Poky Little Puppy</h2>
+            <p><strong>By Janette Sebring Lowrey and Gustaf Tenggren</strong></p>
+            <p>Five puppies sneak through a hole and venture into the grass and hillside. One of the puppies is missing, and it turns out that the slow pup is behind, slowly exploring the surrounding scenery.</p>
+        </div>
+    </div>
+
+    <div id="popup5" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup5')">&times;</span>
+            <h2>The Giving Tree</h2>
+            <p><strong>By Shel Silverstein</strong></p>
+            <p>A tree liked a boy very much. It liked the boy to play with it, let him climb up its branches, and eat its fruits. As the boy grew up, he needed more and more things, such as money, a house, and a boat.</p>
+        </div>
+    </div>
+    <div id="information-section">
+        <h2>Welcome to this website</h2>
+        <p>This website introduces many books suitable for children to read. The books are divided into three categories: In the educational column, children can learn words, and recognize animals, colors, etc. from those picture books. In the emotional column, children can learn more about picture books related to emotions and moods. In the fantasy column, children can enter the fantasy adventure of the picture books.</p>
+    </div>
+    <div id="more-books-section">
+        <h2>More Books</h2>
+        <p>If you want to know more about children's picture books or have any questions, please contact me.</p>
+        <ul>
+            <li><strong>Phone:</strong> <a href="tel:+14389293698">+1 (438) 929-3698</a></li>
+            <li><strong>Email:</strong> <a href="mailto:zhouwenqi@ocadu.ca">zhouwenqi@ocadu.ca</a></li>
+            <li><strong>Address:</strong> 100 MacCaul St, Toronto, On M5T 1G1</li>
+        </ul>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
